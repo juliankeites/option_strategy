@@ -4,8 +4,8 @@ from scipy.stats import norm
 
 st.set_page_config(page_title="Option Strategy Payoff", layout="wide")
 
-PRESETS = {"Jet fuel (USD/t)":1500, "Jet fuel (USD/bbl)": 196.0, "Brent (USD/bbl)": 105.0,
-           "ICE Gasoil (USD/t)": 1400, "EUR/USD": 1.08, "GBP/USD": 1.30, "Custom": 100.0}
+PRESETS = {"Jet fuel (USD/t)":1500.0, "Jet fuel (USD/bbl)": 196.0, "Brent (USD/bbl)": 105.0,
+           "ICE Gasoil (USD/t)": 1400.0, "EUR/USD": 1.08, "GBP/USD": 1.30, "Custom": 100.0}
 
 def price(kind, F, K, T, vol, r, model):
     if T <= 0 or vol <= 0:
